@@ -11,7 +11,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <FeedbackList>
       {options.map(option => {
         return (
-          <FeedbackItem key={nanoid()}>
+          <FeedbackItem key={option}>
             <FeedbackButton
               type="button"
               option={option}
